@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div#root{
+        border: 1px solid black;
+        width: 260px;
+        height: 185px;
+    }
+    div.inner1{
+        border: 1px solid blue;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 248px;
+        height: 82px;
+        display: inline-block;
+    }
+    div.inner2{
+        border: 1px solid red;
+        margin: 5px 0px 0px 5px;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <h2>Eksempel på hvordan vi kan klikke på én bestemt af de røde kasser og få eventet fanget på deres "parent" så vi ved hvilken af de blå kasser der er blevet klikket</h2>
+    <div id="root">
+        <div class="inner1" id="first">
+            <div class="inner2"><span>KLIK MIG</span></div>
+            <div class="inner2"><span>KLIK MIG</span></div>
+            <div class="inner2"><span>KLIK MIG</span></div>
+        </div>
+        <div class="inner1" id="second">
+            <div class="inner2"><span>KLIK MIG</span></div>
+            <div class="inner2"><span>KLIK MIG</span></div>
+            <div class="inner2"><span>KLIK MIG</span></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
